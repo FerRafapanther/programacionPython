@@ -1,0 +1,25 @@
+import math as
+radio= float(input('Dame el radio:\n'))
+print('escoge una opcion:')
+print('1) Obtener diametro')
+print('2) Obtener perimetro')
+print('3) Obtener area')
+opcion==int(input('Teclea 1, 2 o 3:\n))
+if opcion== 1 :
+    diametro== 2*radio
+    print( 'El diametro es: ', diametro)
+    
+    
+elif opcion== 2 :
+    perimetro= 2*m.pi*radio
+    print( 'El perimetro es: ', perimetro)
+    
+elif:    
+    opcion == 3 :
+    area=m.pi * radio**2
+    print('El area es:', area)
+    
+else:
+    print('solo hay 3 opciones : 1, 2 o 3')
+    
+''' trabajar try.. except
