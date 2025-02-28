@@ -5,7 +5,7 @@ Created on Wed Feb 19 00:05:28 2025
 @author: Rocket
 """
 # Fecha: Febrero, 2025
-# @version: 1.0
+# @version: 1.1
 # @autor: FernandoRafaelLopezSolano
 
 class Cliente:
