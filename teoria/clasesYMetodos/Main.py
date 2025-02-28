@@ -5,7 +5,7 @@ Created on Tue Feb 18 16:20:41 2025
 @author: Rocket
 """
 # Fecha: Febrero, 2025
-# @version: 1.0
+# @version: 1.1
 # @autor: FernandoRafaelLopezSolano
 
 from Menu import *
