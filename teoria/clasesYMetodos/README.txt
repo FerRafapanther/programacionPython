@@ -1,5 +1,5 @@
 # Fecha: Febrero, 2025
-# @version: 1.0
+# @version: 1.1
 # @autor: FernandoRafaelLopezSolano
 
 README MENU
@@ -32,6 +32,8 @@ def __init__
 def __imprimir detalles
 def retirar
 def depositar
+
+con la observaciones que se agrego el uso del condicional "if" y "else" al momento de retirar o depositar cantidades.
 
 REAME MAIN
 En este archivo se encuentra la clase Main, aqui se realizan las pruebas de
