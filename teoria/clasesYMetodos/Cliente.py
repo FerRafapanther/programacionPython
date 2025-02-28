@@ -15,7 +15,6 @@ class Cliente:
         self.edad=edad
         
     def imprimirDetalles (self):
-        print("Desde el metodo")
         print("nombre::", self.nombre)
         print("direccion::", self.direccion)
         print("edad::", self.edad)
