@@ -20,10 +20,18 @@ class Cuenta:
         print("nombre::", self.propietario)
         
     def retirar (self,cantidad):
-        self.saldo=self.saldo-cantidad
-        
+        if cantidad < 0:
+            print("Error: La cantidad ingresada no puede ser negativa. Intenta nuevamente.")
+        else:
+            self.saldo = self.saldo - cantidad
+            print(f"Retiro exitoso. Nuevo saldo: {self.saldo}")
+            
     def depositar (self,cantidad):
-        self.saldo=self.saldo+cantidad
+        if cantidad < 0:
+            print("Error: La cantidad ingresada no puede ser negativa. Intenta nuevamente.")
+        else:
+            self.saldo = self.saldo + cantidad
+            print(f"Depósito exitoso. Nuevo saldo: {self.saldo}")
         
         
     
