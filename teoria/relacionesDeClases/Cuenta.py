@@ -5,33 +5,44 @@ Created on Tue Feb 18 16:12:37 2025
 @author: Rocket
 """
 # Fecha: Marzo, 2025
-# @version: 1.2
+# @version: 1.3
 # @autor: FernandoRafaelLopezSolano
 
 class Cuenta:
     def __init__(self, valor, tipo, propietario):
-        self.saldo=valor
-        self.tipo=tipo
-        self.propietario=propietario
+        self.__saldo = valor
+        self.__tipo = tipo
+        self.__propietario = propietario
         
-    def imprimirDetalles (self):
-        print("saldo::", self.saldo)
-        print("tipo::", self.tipo)
-        print("nombre::", self.propietario)
+    def imprimirDetalles(self):
+        print("saldo::", self.__saldo)
+        print("tipo::", self.__tipo)
+        print("nombre::", self.__propietario)
         
-    def retirar (self,cantidad):
-        if cantidad < 0:
-            print("Error: La cantidad ingresada no puede ser negativa. Intenta nuevamente.")
+    def get_saldo(self):
+        return self.__saldo
+    
+    def set_saldo(self, nuevo_saldo):
+        if nuevo_saldo >= 0:
+            self.__saldo = nuevo_saldo
         else:
-            self.saldo = self.saldo - cantidad
-            print(f"Retiro exitoso. Nuevo saldo: {self.saldo}")
-       
-    def depositar (self,cantidad):
+            print("Error: El saldo no puede ser negativo.")
+    
+    def retirar(self, cantidad):
         if cantidad < 0:
-            print("Error: La cantidad ingresada no puede ser negativa. Intenta nuevamente.")
+            return "Error: La cantidad a retirar no puede ser negativa."
+        elif cantidad > self.__saldo:
+            return "Error: Fondos insuficientes."
         else:
-            self.saldo = self.saldo + cantidad
-            print(f"Depósito exitoso. Nuevo saldo: {self.saldo}")
+            self.__saldo -= cantidad
+            return "Retiro exitoso."
+        
+    def depositar(self, cantidad):
+        if cantidad < 0:
+            return "Error: La cantidad a depositar no puede ser negativa."
+        else:
+            self.__saldo += cantidad
+            return "Depósito exitoso."
             
     
         
