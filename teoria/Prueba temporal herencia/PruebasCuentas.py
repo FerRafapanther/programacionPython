@@ -19,8 +19,7 @@ cuenta_nomina = CuentaNomina(340, "Fernando")
 cuentas_usuario = [cuenta_debito, cuenta_credito, cuenta_nomina]
 
 # Iniciar menú con mensaje de bienvenida
-menu = Menu("Bienvenido al sistema bancario.", cuentas_usuario)
+menu = Menu("Bienvenido a Banxico.", cuentas_usuario)
 
-# Ejecutar flujo del menú interactivo
 menu.darBienvenida()
 menu.menuCuentas()
